@@ -1,5 +1,7 @@
 package org.fengw.spring.dao;
 
+import org.fengw.spring.entity.Test1Entity;
+
 /**
  * JTA分布式事务
  *
@@ -11,14 +13,16 @@ public interface IJtaDao {
     /**
      * 插入商品库
      *
+     * @param entity 实体类
      * @return 插入件数
      */
-    int insertGoods();
+    int insertGoods(Test1Entity entity);
 
     /**
      * 插入用户库
      *
+     * @param entity 实体类
      * @return 插入件数
      */
-    int insertUser();
+    int insertUser(Test1Entity entity);
 }

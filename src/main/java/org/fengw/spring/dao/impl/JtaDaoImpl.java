@@ -1,11 +1,9 @@
 package org.fengw.spring.dao.impl;
 
-import java.math.BigDecimal;
-import java.util.Date;
-
 import javax.annotation.Resource;
 
 import org.fengw.spring.dao.IJtaDao;
+import org.fengw.spring.entity.Test1Entity;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -24,17 +22,17 @@ public class JtaDaoImpl implements IJtaDao {
     private JdbcTemplate jdbcUser;
 
     @Override
-    public int insertGoods() {
+    public int insertGoods(Test1Entity entity) {
         // 插入商品库
         String sql = "insert into t_test_1 (name, birthday, sex, money) values (?, ?, ?, ?)";
-        return jdbcGoods.update(sql, "goods", new Date(), 0, new BigDecimal("11111.11")) ;
+        return jdbcGoods.update(sql, entity.getName(), entity.getBirthday(), entity.getSex(), entity.getMoney());
     }
 
     @Override
-    public int insertUser() {
+    public int insertUser(Test1Entity entity) {
         // 插入用户库
         String sql = "insert into t_test_1 (name, birthday, sex, money) values (?, ?, ?, ?)";
-        return jdbcUser.update(sql, "user", new Date(), 1, new BigDecimal("22222.22")) ;
+        return jdbcUser.update(sql, entity.getName(), entity.getBirthday(), entity.getSex(), entity.getMoney());
     }
 
 }

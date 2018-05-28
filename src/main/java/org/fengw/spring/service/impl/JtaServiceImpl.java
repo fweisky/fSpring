@@ -1,6 +1,10 @@
 package org.fengw.spring.service.impl;
 
+import java.math.BigDecimal;
+import java.util.Date;
+
 import org.fengw.spring.dao.IJtaDao;
+import org.fengw.spring.entity.Test1Entity;
 import org.fengw.spring.service.IJtaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,9 +24,21 @@ public class JtaServiceImpl implements IJtaService {
     @Override
     @Transactional
     public void insert() {
+
         // 插入商品库
-        dao.insertGoods();
+        Test1Entity goodsEntity = new Test1Entity();
+        goodsEntity.setName("goods");
+        goodsEntity.setBirthday(new Date());
+        goodsEntity.setSex(0);
+        goodsEntity.setMoney(new BigDecimal("77777.77"));
+        dao.insertGoods(goodsEntity);
+
         // 插入用户库
-        dao.insertUser();
+        Test1Entity userEntity = new Test1Entity();
+        userEntity.setName("user");
+        userEntity.setBirthday(new Date());
+        userEntity.setSex(1);
+        userEntity.setMoney(new BigDecimal("88888.88"));
+        dao.insertUser(userEntity);
     }
 }

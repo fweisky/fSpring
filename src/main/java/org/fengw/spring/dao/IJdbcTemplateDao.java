@@ -15,9 +15,10 @@ public interface IJdbcTemplateDao {
     /**
      * 插入数据
      *
+     * @param entity 实体类
      * @return 插入件数
      */
-    int insert();
+    int insert(Test1Entity entity);
 
     /**
      * 检索数据
@@ -29,7 +30,8 @@ public interface IJdbcTemplateDao {
     /**
      * 更新数据
      *
+     * @param entity 实体类
      * @return 更新件数
      */
-    int update();
+    int update(Test1Entity entity);
 }

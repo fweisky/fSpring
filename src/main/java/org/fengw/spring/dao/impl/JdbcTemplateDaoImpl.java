@@ -1,7 +1,5 @@
 package org.fengw.spring.dao.impl;
 
-import java.math.BigDecimal;
-import java.util.Date;
 import java.util.List;
 
 import org.fengw.spring.dao.IJdbcTemplateDao;
@@ -24,9 +22,9 @@ public class JdbcTemplateDaoImpl implements IJdbcTemplateDao {
     private JdbcTemplate jdbc;
 
     @Override
-    public int insert() {
+    public int insert(Test1Entity entity) {
         String sql = "insert into t_test_1 (name, birthday, sex, money) values (?, ?, ?, ?)";
-        return jdbc.update(sql, "fengW", new Date(), 0, new BigDecimal("11111.11")) ;
+        return jdbc.update(sql, entity.getName(), entity.getBirthday(), entity.getSex(), entity.getMoney());
     }
 
     @Override
@@ -36,8 +34,8 @@ public class JdbcTemplateDaoImpl implements IJdbcTemplateDao {
     }
 
     @Override
-    public int update() {
+    public int update(Test1Entity entity) {
         String sql = "update t_test_1 set birthday=?, sex=?, money=? where name=?";
-        return jdbc.update(sql, new Date(), 1, new BigDecimal("22222.22"), "fengW");
+        return jdbc.update(sql, entity.getBirthday(), entity.getSex(), entity.getMoney(), entity.getName());
     }
 }

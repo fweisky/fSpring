@@ -1,5 +1,7 @@
 package org.fengw.spring.service.impl;
 
+import java.math.BigDecimal;
+import java.util.Date;
 import java.util.List;
 
 import org.fengw.spring.dao.IJdbcTemplateDao;
@@ -25,7 +27,12 @@ public class JdbcTemplateServiceImpl implements IJdbcTemplateService {
     @Override
     @Transactional(propagation=Propagation.REQUIRES_NEW)
     public int insert() {
-        return dao.insert();
+        Test1Entity entity = new Test1Entity();
+        entity.setName("fengW");
+        entity.setBirthday(new Date());
+        entity.setSex(0);
+        entity.setMoney(new BigDecimal("11111.11"));
+        return dao.insert(entity);
     }
 
     @Override
@@ -35,6 +42,11 @@ public class JdbcTemplateServiceImpl implements IJdbcTemplateService {
 
     @Override
     public int update() {
-        return dao.update();
+        Test1Entity entity = new Test1Entity();
+        entity.setName("fengW");
+        entity.setBirthday(new Date());
+        entity.setSex(1);
+        entity.setMoney(new BigDecimal("22222.22"));
+        return dao.update(entity);
     }
 }

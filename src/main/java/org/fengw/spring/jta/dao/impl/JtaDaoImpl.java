@@ -4,6 +4,8 @@ import javax.annotation.Resource;
 
 import org.fengw.spring.common.entity.Test1Entity;
 import org.fengw.spring.jta.dao.IJtaDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -15,10 +17,13 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class JtaDaoImpl implements IJtaDao {
 
+    // 利用@Resource指定装配Bean
     @Resource(name="jdbcTemplateGoods")
     private JdbcTemplate jdbcGoods;
 
-    @Resource(name="jdbcTemplateUser")
+    // 利用@Qualifier指定装配Bean
+    @Autowired
+    @Qualifier(value="jdbcTemplateUser")
     private JdbcTemplate jdbcUser;
 
     @Override

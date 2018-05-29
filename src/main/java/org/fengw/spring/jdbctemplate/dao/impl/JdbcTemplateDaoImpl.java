@@ -1,9 +1,9 @@
-package org.fengw.spring.dao.impl;
+package org.fengw.spring.jdbctemplate.dao.impl;
 
 import java.util.List;
 
-import org.fengw.spring.dao.IJdbcTemplateDao;
-import org.fengw.spring.entity.Test1Entity;
+import org.fengw.spring.common.entity.Test1Entity;
+import org.fengw.spring.jdbctemplate.dao.IJdbcTemplateDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

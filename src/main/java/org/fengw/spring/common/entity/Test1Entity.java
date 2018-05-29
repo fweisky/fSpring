@@ -1,4 +1,4 @@
-package org.fengw.spring.entity;
+package org.fengw.spring.common.entity;
 
 import java.math.BigDecimal;
 import java.util.Date;

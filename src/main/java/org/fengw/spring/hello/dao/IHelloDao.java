@@ -1,4 +1,4 @@
-package org.fengw.spring.service;
+package org.fengw.spring.hello.dao;
 
 /**
  * Hello
@@ -6,7 +6,7 @@ package org.fengw.spring.service;
  * @author Feng Wei
  *
  */
-public interface IHelloService {
+public interface IHelloDao {
 
     /**
      * Say Hello

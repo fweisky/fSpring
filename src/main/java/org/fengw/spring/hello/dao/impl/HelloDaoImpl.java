@@ -1,6 +1,6 @@
-package org.fengw.spring.dao.impl;
+package org.fengw.spring.hello.dao.impl;
 
-import org.fengw.spring.dao.IHelloDao;
+import org.fengw.spring.hello.dao.IHelloDao;
 import org.springframework.stereotype.Repository;
 
 /**

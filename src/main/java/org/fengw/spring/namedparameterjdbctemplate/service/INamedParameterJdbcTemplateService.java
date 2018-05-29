@@ -1,16 +1,16 @@
-package org.fengw.spring.service;
+package org.fengw.spring.namedparameterjdbctemplate.service;
 
 import java.util.List;
 
-import org.fengw.spring.entity.Test1Entity;
+import org.fengw.spring.common.entity.Test1Entity;
 
 /**
- * JdbcTemplate
+ * NamedParameterJdbcTemplate
  *
  * @author Feng Wei
  *
  */
-public interface IJdbcTemplateService {
+public interface INamedParameterJdbcTemplateService {
 
     /**
      * 插入数据

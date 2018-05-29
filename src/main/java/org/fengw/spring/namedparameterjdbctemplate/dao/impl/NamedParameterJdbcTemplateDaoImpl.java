@@ -1,10 +1,10 @@
-package org.fengw.spring.dao.impl;
+package org.fengw.spring.namedparameterjdbctemplate.dao.impl;
 
 import java.util.List;
 import java.util.Map;
 
-import org.fengw.spring.dao.INamedParameterJdbcTemplateDao;
-import org.fengw.spring.entity.Test1Entity;
+import org.fengw.spring.common.entity.Test1Entity;
+import org.fengw.spring.namedparameterjdbctemplate.dao.INamedParameterJdbcTemplateDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;

@@ -1,9 +1,9 @@
-package org.fengw.spring.dao;
+package org.fengw.spring.namedparameterjdbctemplate.dao;
 
 import java.util.List;
 import java.util.Map;
 
-import org.fengw.spring.entity.Test1Entity;
+import org.fengw.spring.common.entity.Test1Entity;
 
 /**
  * NamedParameterJdbcTemplate

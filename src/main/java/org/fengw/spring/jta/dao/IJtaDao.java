@@ -1,6 +1,6 @@
-package org.fengw.spring.dao;
+package org.fengw.spring.jta.dao;
 
-import org.fengw.spring.entity.Test1Entity;
+import org.fengw.spring.common.entity.Test1Entity;
 
 /**
  * JTA分布式事务

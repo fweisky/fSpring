@@ -1,9 +1,9 @@
-package org.fengw.spring.dao.impl;
+package org.fengw.spring.jta.dao.impl;
 
 import javax.annotation.Resource;
 
-import org.fengw.spring.dao.IJtaDao;
-import org.fengw.spring.entity.Test1Entity;
+import org.fengw.spring.common.entity.Test1Entity;
+import org.fengw.spring.jta.dao.IJtaDao;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 

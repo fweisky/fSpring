@@ -1,7 +1,7 @@
 package org.fengw.spring.test;
 
 import org.fengw.spring.common.constant.ConfigFileConstant;
-import org.fengw.spring.service.IJtaService;
+import org.fengw.spring.jta.service.IJtaService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

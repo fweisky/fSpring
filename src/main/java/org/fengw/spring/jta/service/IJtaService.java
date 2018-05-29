@@ -1,4 +1,4 @@
-package org.fengw.spring.service;
+package org.fengw.spring.jta.service;
 
 /**
  * JTA分布式事务

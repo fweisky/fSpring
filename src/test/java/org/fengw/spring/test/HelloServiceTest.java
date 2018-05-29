@@ -1,7 +1,7 @@
 package org.fengw.spring.test;
 
 import org.fengw.spring.common.constant.ConfigFileConstant;
-import org.fengw.spring.service.IHelloService;
+import org.fengw.spring.hello.service.IHelloService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  *
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(value=ConfigFileConstant.PATH_SPRING_CONFIG)
+@ContextConfiguration(value=ConfigFileConstant.PATH_SPRING_JDBC_TEMPLATE_CONFIG)
 public class HelloServiceTest {
 
     @Autowired

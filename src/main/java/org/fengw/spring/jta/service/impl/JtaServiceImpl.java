@@ -1,11 +1,11 @@
-package org.fengw.spring.service.impl;
+package org.fengw.spring.jta.service.impl;
 
 import java.math.BigDecimal;
 import java.util.Date;
 
-import org.fengw.spring.dao.IJtaDao;
-import org.fengw.spring.entity.Test1Entity;
-import org.fengw.spring.service.IJtaService;
+import org.fengw.spring.common.entity.Test1Entity;
+import org.fengw.spring.jta.dao.IJtaDao;
+import org.fengw.spring.jta.service.IJtaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

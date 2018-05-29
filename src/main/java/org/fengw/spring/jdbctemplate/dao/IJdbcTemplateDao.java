@@ -1,8 +1,8 @@
-package org.fengw.spring.dao;
+package org.fengw.spring.jdbctemplate.dao;
 
 import java.util.List;
 
-import org.fengw.spring.entity.Test1Entity;
+import org.fengw.spring.common.entity.Test1Entity;
 
 /**
  * JdbcTemplate

@@ -6,9 +6,8 @@ import org.fengw.spring.configuration.service.IAccessService;
 import org.fengw.spring.configuration.service.impl.GoodsAccessServiceImpl;
 import org.fengw.spring.configuration.service.impl.UserAccessServiceImpl;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Conditional;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 /**
  * &#64;Conditional 注解示例<br/>
@@ -17,8 +16,7 @@ import org.springframework.context.annotation.Configuration;
  * @author Feng Wei
  *
  */
-@Configuration
-@ComponentScan
+@Component
 public class ConditionalConfig {
 
     /**

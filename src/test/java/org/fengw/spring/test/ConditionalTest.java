@@ -1,6 +1,6 @@
 package org.fengw.spring.test;
 
-import org.fengw.spring.configuration.ConditionalConfig;
+import org.fengw.spring.common.constant.ConfigFileConstant;
 import org.fengw.spring.configuration.service.IAccessService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  *
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes=ConditionalConfig.class)
+@ContextConfiguration(value=ConfigFileConstant.PATH_SPRING_CONFIGURATION_CONFIG)
 public class ConditionalTest {
 
     @Autowired

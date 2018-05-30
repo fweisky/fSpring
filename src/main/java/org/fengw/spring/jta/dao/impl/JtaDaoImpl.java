@@ -39,5 +39,4 @@ public class JtaDaoImpl implements IJtaDao {
         String sql = "insert into t_test_1 (name, birthday, sex, money) values (?, ?, ?, ?)";
         return jdbcUser.update(sql, entity.getName(), entity.getBirthday(), entity.getSex(), entity.getMoney());
     }
-
 }

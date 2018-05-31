@@ -1,27 +1,31 @@
-package org.fengw.spring.aop;
+package org.fengw.spring.aop.advice;
 
 import java.util.Arrays;
 
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.AfterThrowing;
-import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 /**
- * AOP
+ * <pre>
+ * 前置通知：@Before
+ * 后置通知：@Afte
+ * 返回通知：@AfterReturning
+ * 异常通知：@AfterThrowing
+ * 定义切点：@Pointcut
+ * </pre>
  *
  * @author Feng Wei
  *
  */
 @Component
 @Aspect
-public class LoggingAspect {
+public class AdviceAspect {
 
     /**
      * 后置通知：通知方法会在目标方法返回或抛出异常后调用
@@ -59,26 +63,6 @@ public class LoggingAspect {
     }
 
     /**
-     * 环绕通知：通知方法会在目标方法调用前、后、发生异常时执行
-     *
-     * @param jp 连接点
-     */
-    @Around(value="execution(* org.fengw.spring.aop.AroundAopImpl.*(..))")
-    public void aroundMethod(ProceedingJoinPoint jp){
-        String methodName = jp.getSignature().getName();
-
-        try {
-            System.out.println(String.format("环绕通知-->前置通知  |  方法名=%s  |  参数=%s", methodName, Arrays.asList(jp.getArgs())));
-            Object result = jp.proceed();
-            System.out.println(String.format("环绕通知-->返回通知  |  方法名=%s  |  结果=%s", methodName, result));
-        } catch (Throwable e) {
-            System.out.println(String.format("环绕通知-->异常通知  |  方法名=%s  |  异常=%s", methodName, e));
-        }
-
-        System.out.println(String.format("环绕通知-->后置通知  |  方法名=%s", methodName));
-    }
-
-    /**
      * 前置通知：通知方法会在目标方法调用之前执行
      *
      * @param jp 连接点
@@ -93,6 +77,6 @@ public class LoggingAspect {
      * 定义单一切点<br/>
      * 前置通知、后置通知、返回通知、异常通知都可以应用此规则
      */
-    @Pointcut(value="execution(* org.fengw.spring.aop.AopImpl.*(..))")
+    @Pointcut(value="execution(* org.fengw.spring.aop.advice.AdviceImpl.*(..))")
     public void singlePointcut() {}
 }

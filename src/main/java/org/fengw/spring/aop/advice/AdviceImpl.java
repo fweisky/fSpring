@@ -1,15 +1,21 @@
-package org.fengw.spring.aop;
+package org.fengw.spring.aop.advice;
 
 import org.springframework.stereotype.Component;
 
 /**
- * AOP
+ * <pre>
+ * 前置通知：@Before
+ * 后置通知：@Afte
+ * 返回通知：@AfterReturning
+ * 异常通知：@AfterThrowing
+ * 定义切点：@Pointcut
+ * </pre>
  *
  * @author Feng Wei
  *
  */
 @Component
-public class AopImpl implements IAop {
+public class AdviceImpl implements IAdvice {
 
     @Override
     public int add(int i, int j) {

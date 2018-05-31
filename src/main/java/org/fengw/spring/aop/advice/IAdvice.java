@@ -1,12 +1,18 @@
-package org.fengw.spring.aop;
+package org.fengw.spring.aop.advice;
 
 /**
- * AOP
+ * <pre>
+ * 前置通知：@Before
+ * 后置通知：@Afte
+ * 返回通知：@AfterReturning
+ * 异常通知：@AfterThrowing
+ * 定义切点：@Pointcut
+ * </pre>
  *
  * @author Feng Wei
  *
  */
-public interface IAop {
+public interface IAdvice {
 
     /**
      * 加法

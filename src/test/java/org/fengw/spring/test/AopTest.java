@@ -1,12 +1,14 @@
 package org.fengw.spring.test;
 
-import org.fengw.spring.aop.IAop;
+import org.fengw.spring.aop.advice.IAdvice;
+import org.fengw.spring.aop.around.IAround;
+import org.fengw.spring.aop.declareparents.China;
+import org.fengw.spring.aop.declareparents.ILiaoNing;
 import org.fengw.spring.common.constant.ConfigFileConstant;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -21,41 +23,64 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class AopTest {
 
     @Autowired
-    @Qualifier(value="aopImpl")
-    private IAop aop;
+    private IAdvice advice;
+
+    @Autowired
+    private IAround aroud;
+
+    @Autowired
+    private China china;
 
     /**
-     * 测试加法
+     * 测试环绕通知
      */
     @Test
-    public void testAdd() {
-        int num = aop.add(1, 2);
+    public void testAroudDivide() {
+        aroud.divide(7, 0);
+    }
+
+    /**
+     * 测试前置、后置、返回通知
+     */
+    @Test
+    public void testAroundAdd() {
+        int num = advice.add(1, 2);
         Assert.assertEquals(num, 3);
     }
 
     /**
-     * 测试除法
+     * 测试前置、后置、返回、异常通知
      */
     @Test
-    public void testDivide() {
-        aop.divide(7, 0);
+    public void testAroundDivide() {
+        advice.divide(7, 0);
     }
 
     /**
-     * 测试乘法
+     * 测试前置、后置、返回通知
      */
     @Test
-    public void testMultip() {
-        int num = aop.multiply(7, 7);
+    public void testAroundMultip() {
+        int num = advice.multiply(7, 7);
         Assert.assertEquals(num, 49);
     }
 
     /**
-     * 测试减法
+     * 测试前置、后置、返回通知
      */
     @Test
-    public void testSubtract() {
-        int num = aop.subtract(7, 2);
+    public void testAroundSubtract() {
+        int num = advice.subtract(7, 2);
         Assert.assertEquals(num, 5);
+    }
+
+    /**
+     * 测试 @DeclareParents
+     */
+    @Test
+    public void testHelloChina() {
+        china.helloChina();
+        ILiaoNing liaoNing = (ILiaoNing) china;
+        liaoNing.helloLiaoNing();
     }
 }

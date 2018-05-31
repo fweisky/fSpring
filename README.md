@@ -21,6 +21,11 @@
     * [环绕通知：@Around](https://github.com/fweisky/fSpring/tree/master/src/main/java/org/fengw/spring/aop/around)
     * [定义切点：@Pointcut](https://github.com/fweisky/fSpring/tree/master/src/main/java/org/fengw/spring/aop/advice)
     * [引入新方法：@DeclareParents](https://github.com/fweisky/fSpring/tree/master/src/main/java/org/fengw/spring/aop/declareparents)
+* [Bean的作用域](https://github.com/fweisky/fSpring/tree/master/src/main/java/org/fengw/spring/scope)
+    * [单例（Singleton）](https://github.com/fweisky/fSpring/tree/master/src/main/java/org/fengw/spring/scope/Singleton.java)
+    * [原型（Prototype）](https://github.com/fweisky/fSpring/tree/master/src/main/java/org/fengw/spring/scope/Prototype.java)
+    * 会话（Session） --> 过后再学
+    * 请求（Request） --> 过后再学
 
 ## 运行示例
 * [JUnit测试类直接运行即可](https://github.com/fweisky/fSpring/tree/master/src/test/java/org/fengw/spring/test)

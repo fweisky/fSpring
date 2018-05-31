@@ -22,4 +22,7 @@ public abstract class ConfigFileConstant {
 
     /** spring-jta-config */
     public static final String PATH_SPRING_JTA_CONFIG = "classpath:spring-jta-config.xml";
+
+    /** spring-scope-config.xml */
+    public static final String PATH_SPRING_SCOPE_CONFIG = "classpath:spring-scope-config.xml";
 }

@@ -7,7 +7,6 @@ import org.fengw.spring.configuration.service.IAccessService;
  * 访问用户数据库
  *
  * @author Feng Wei
- *
  */
 public class UserAccessServiceImpl implements IAccessService {
 

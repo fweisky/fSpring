@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
  * Hello
  *
  * @author Feng Wei
- *
  */
 @Repository
 public class HelloDaoImpl implements IHelloDao {

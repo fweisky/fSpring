@@ -4,7 +4,6 @@ package org.fengw.spring.common.constant;
  * 配置文件常量类
  *
  * @author Feng Wei
- *
  */
 public abstract class ConfigFileConstant {
 

@@ -15,7 +15,6 @@ import org.springframework.stereotype.Repository;
  * NamedParameterJdbcTemplate
  *
  * @author Feng Wei
- *
  */
 @Repository
 public class NamedParameterJdbcTemplateDaoImpl implements INamedParameterJdbcTemplateDao {

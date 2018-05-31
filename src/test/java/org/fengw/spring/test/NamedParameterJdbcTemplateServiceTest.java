@@ -15,7 +15,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * NamedParameterJdbcTemplate
  *
  * @author Feng Wei
- *
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(value=ConfigFileConstant.PATH_SPRING_JDBC_TEMPLATE_CONFIG)

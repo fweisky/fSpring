@@ -7,7 +7,6 @@ import org.fengw.spring.configuration.service.IAccessService;
  * 访问商品数据库
  *
  * @author Feng Wei
- *
  */
 public class GoodsAccessServiceImpl implements IAccessService {
 

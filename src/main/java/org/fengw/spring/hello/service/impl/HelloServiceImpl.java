@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
  * Hello
  *
  * @author Feng Wei
- *
  */
 @Service
 public class HelloServiceImpl implements IHelloService {

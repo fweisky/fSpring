@@ -16,7 +16,6 @@ import org.springframework.stereotype.Service;
  * NamedParameterJdbcTemplate
  *
  * @author Feng Wei
- *
  */
 @Service
 public class NamedParameterJdbcTemplateServiceImpl implements INamedParameterJdbcTemplateService {

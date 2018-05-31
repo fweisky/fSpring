@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
  * Bean的作用域： 单例（Singleton）
  *
  * @author Feng Wei
- *
  */
 @Component
 @Scope(value=ConfigurableBeanFactory.SCOPE_SINGLETON)

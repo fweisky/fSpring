@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
  * 引入新方法：@DeclareParents
  *
  * @author Feng Wei
- *
  */
 @Component
 public class LiaoNingImpl implements ILiaoNing {

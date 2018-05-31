@@ -12,7 +12,6 @@ import org.springframework.stereotype.Component;
  * </pre>
  *
  * @author Feng Wei
- *
  */
 @Component
 public class AdviceImpl implements IAdvice {

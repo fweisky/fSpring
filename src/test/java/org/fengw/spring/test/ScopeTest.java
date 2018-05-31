@@ -14,7 +14,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * Bean的作用域
  *
  * @author Feng Wei
- *
  */
 @RunWith(value=SpringJUnit4ClassRunner.class)
 @ContextConfiguration(value=ConfigFileConstant.PATH_SPRING_SCOPE_CONFIG)

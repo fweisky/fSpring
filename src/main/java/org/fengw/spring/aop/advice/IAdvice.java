@@ -10,13 +10,11 @@ package org.fengw.spring.aop.advice;
  * </pre>
  *
  * @author Feng Wei
- *
  */
 public interface IAdvice {
 
     /**
      * 加法
-     *
      * @param i 数值1
      * @param j 数值2
      * @return 相加后结果
@@ -25,7 +23,6 @@ public interface IAdvice {
 
     /**
      * 减法
-     *
      * @param i 数值1
      * @param j 数值2
      * @return 相减后结果
@@ -34,7 +31,6 @@ public interface IAdvice {
 
     /**
      * 乘法
-     *
      * @param i 数值1
      * @param j 数值2
      * @return 相乘后结果
@@ -43,7 +39,6 @@ public interface IAdvice {
 
     /**
      * 除法
-     *
      * @param i 数值1
      * @param j 数值2
      * @return 相除后结果

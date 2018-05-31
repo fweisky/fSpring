@@ -9,7 +9,6 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
  * 用户库判断条件类
  *
  * @author Feng Wei
- *
  */
 public class UserCondition implements Condition {
 

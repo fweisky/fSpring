@@ -12,7 +12,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * JTA分布式事务
  *
  * @author Feng Wei
- *
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(value=ConfigFileConstant.PATH_SPRING_JTA_CONFIG)

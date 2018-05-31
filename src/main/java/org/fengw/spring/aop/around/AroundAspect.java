@@ -11,7 +11,6 @@ import org.springframework.stereotype.Component;
  * 环绕通知：@Around
  *
  * @author Feng Wei
- *
  */
 @Component
 @Aspect
@@ -19,7 +18,6 @@ public class AroundAspect {
 
     /**
      * 环绕通知：通知方法会在目标方法调用前、后、发生异常时执行
-     *
      * @param jp 连接点
      */
     @Around(value="execution(* org.fengw.spring.aop.around.AroundImpl.*(..))")

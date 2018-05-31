@@ -5,7 +5,6 @@ package org.fengw.spring.configuration.service;
  * 访问数据库
  *
  * @author Feng Wei
- *
  */
 public interface IAccessService {
 

@@ -12,7 +12,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * Hello
  *
  * @author Feng Wei
- *
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(value=ConfigFileConstant.PATH_SPRING_HELLO_CONFIG)

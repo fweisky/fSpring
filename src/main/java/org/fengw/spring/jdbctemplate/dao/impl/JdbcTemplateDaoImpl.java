@@ -13,7 +13,6 @@ import org.springframework.stereotype.Repository;
  * JdbcTemplate
  *
  * @author Feng Wei
- *
  */
 @Repository
 public class JdbcTemplateDaoImpl implements IJdbcTemplateDao {

@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
  * Bean的作用域： 原型（Prototype）
  *
  * @author Feng Wei
- *
  */
 @Component
 @Scope(value=ConfigurableBeanFactory.SCOPE_PROTOTYPE)

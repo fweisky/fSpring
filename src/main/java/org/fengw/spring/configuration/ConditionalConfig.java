@@ -14,14 +14,12 @@ import org.springframework.stereotype.Component;
  * 配置类
  *
  * @author Feng Wei
- *
  */
 @Component
 public class ConditionalConfig {
 
     /**
      * 取得商品库实例
-     *
      * @return 商品库实例
      */
     @Bean
@@ -32,7 +30,6 @@ public class ConditionalConfig {
 
     /**
      * 取得用户库实例
-     *
      * @return 用户库实例
      */
     @Bean

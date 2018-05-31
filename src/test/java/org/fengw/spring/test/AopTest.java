@@ -16,7 +16,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * AOP
  *
  * @author Feng Wei
- *
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(value=ConfigFileConstant.PATH_SPRING_AOP_CONFIG)

@@ -21,7 +21,6 @@ import org.springframework.stereotype.Component;
  * </pre>
  *
  * @author Feng Wei
- *
  */
 @Component
 @Aspect
@@ -29,7 +28,6 @@ public class AdviceAspect {
 
     /**
      * 后置通知：通知方法会在目标方法返回或抛出异常后调用
-     *
      * @param jp 连接点
      */
     @After(value="singlePointcut()")
@@ -40,7 +38,6 @@ public class AdviceAspect {
 
     /**
      * 返回通知：通知方法会在目标方法返回后调用
-     *
      * @param jp 连接点
      * @param result 返回结果
      */
@@ -52,7 +49,6 @@ public class AdviceAspect {
 
     /**
      * 异常通知：通知方法会在目标方法抛出异常后调用
-     *
      * @param jp 连接点
      * @param e 异常
      */
@@ -64,7 +60,6 @@ public class AdviceAspect {
 
     /**
      * 前置通知：通知方法会在目标方法调用之前执行
-     *
      * @param jp 连接点
      */
     @Before(value="singlePointcut()")

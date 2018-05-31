@@ -7,7 +7,6 @@ import java.util.Date;
  * t_test_1 表的Entity
  *
  * @author Feng Wei
- *
  */
 public class Test1Entity {
 

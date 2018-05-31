@@ -16,7 +16,6 @@ import org.springframework.transaction.annotation.Transactional;
  * JdbcTemplate
  *
  * @author Feng Wei
- *
  */
 @Service
 public class JdbcTemplateServiceImpl implements IJdbcTemplateService {

@@ -1,5 +1,5 @@
 # 入门学习 Spring
-已经学习完成的内容（持续更新中）
+已经学习完成的内容如下（持续更新中）
 
 ## 示例代码
 * [Hello World](https://github.com/fweisky/fSpring/tree/master/src/main/java/org/fengw/spring/hello)

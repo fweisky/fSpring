@@ -11,6 +11,7 @@ import org.fengw.spring.namedparameterjdbctemplate.dao.INamedParameterJdbcTempla
 import org.fengw.spring.namedparameterjdbctemplate.service.INamedParameterJdbcTemplateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * NamedParameterJdbcTemplate
@@ -24,6 +25,7 @@ public class NamedParameterJdbcTemplateServiceImpl implements INamedParameterJdb
     private INamedParameterJdbcTemplateDao dao;
 
     @Override
+    @Transactional
     public int insert() {
         Test1Entity entity = new Test1Entity();
         entity.setName("fengW");
@@ -41,6 +43,7 @@ public class NamedParameterJdbcTemplateServiceImpl implements INamedParameterJdb
     }
 
     @Override
+    @Transactional
     public int update() {
         Test1Entity entity = new Test1Entity();
         entity.setName("fengW");

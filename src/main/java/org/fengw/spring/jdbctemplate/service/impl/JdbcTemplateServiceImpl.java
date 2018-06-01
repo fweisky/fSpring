@@ -9,7 +9,6 @@ import org.fengw.spring.jdbctemplate.dao.IJdbcTemplateDao;
 import org.fengw.spring.jdbctemplate.service.IJdbcTemplateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
@@ -24,7 +23,7 @@ public class JdbcTemplateServiceImpl implements IJdbcTemplateService {
     private IJdbcTemplateDao dao;
 
     @Override
-    @Transactional(propagation=Propagation.REQUIRES_NEW)
+    @Transactional
     public int insert() {
         Test1Entity entity = new Test1Entity();
         entity.setName("fengW");
@@ -40,6 +39,7 @@ public class JdbcTemplateServiceImpl implements IJdbcTemplateService {
     }
 
     @Override
+    @Transactional
     public int update() {
         Test1Entity entity = new Test1Entity();
         entity.setName("fengW");

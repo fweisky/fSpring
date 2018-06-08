@@ -1,7 +1,7 @@
 package org.fengw.spring.test;
 
 import org.fengw.spring.common.constant.ConfigFileConstant;
-import org.fengw.spring.hello.service.IHelloService;
+import org.fengw.spring.jta.service.IJtaService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,22 +9,22 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
- * Hello
+ * JTA分布式事务
  *
  * @author Feng Wei
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(value=ConfigFileConstant.PATH_SPRING_HELLO_CONFIG)
-public class HelloServiceTest {
+@ContextConfiguration(value=ConfigFileConstant.PATH_SPRING_JTA_CONFIG)
+public class JtaTest {
 
     @Autowired
-    private IHelloService service;
+    private IJtaService service;
 
     /**
-     * 测试Hello
+     * 测试插入
      */
     @Test
-    public void testHello() {
-        service.hello();
+    public void testInsert() {
+        service.insert();
     }
 }

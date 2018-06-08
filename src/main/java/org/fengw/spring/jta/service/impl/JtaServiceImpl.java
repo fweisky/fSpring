@@ -22,7 +22,7 @@ public class JtaServiceImpl implements IJtaService {
     private IJtaDao dao;
 
     @Override
-    @Transactional(noRollbackFor=Exception.class)
+    @Transactional(rollbackFor=Exception.class)
     public void insert() {
 
         // 插入商品库

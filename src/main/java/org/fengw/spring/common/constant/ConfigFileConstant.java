@@ -13,6 +13,9 @@ public abstract class ConfigFileConstant {
     /** spring-configuration-config.xml */
     public static final String PATH_SPRING_CONFIGURATION_CONFIG = "classpath:spring-configuration-config.xml";
 
+    /** spring-custom-exception-config.xml */
+    public static final String PATH_SPRING_CUSTOM_EXCEPTION_CONFIG = "classpath:spring-custom-exception-config.xml";
+
     /** spring-hello-config.xml */
     public static final String PATH_SPRING_HELLO_CONFIG = "classpath:spring-hello-config.xml";
 

@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.fengw.spring.common.constant.ConfigFileConstant;
 import org.fengw.spring.common.entity.Test1Entity;
-import org.fengw.spring.jdbctemplate.service.IJdbcTemplateService;
+import org.fengw.spring.namedparameterjdbctemplate.service.INamedParameterJdbcTemplateService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,16 +12,16 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
- * JdbcTemplate
+ * NamedParameterJdbcTemplate
  *
  * @author Feng Wei
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(value=ConfigFileConstant.PATH_SPRING_JDBC_TEMPLATE_CONFIG)
-public class JdbcTemplateServiceTest {
+public class NamedParameterJdbcTemplateTest {
 
     @Autowired
-    private IJdbcTemplateService service;
+    private INamedParameterJdbcTemplateService service;
 
     /**
      * 测试插入

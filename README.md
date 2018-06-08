@@ -1,31 +1,36 @@
-# 入门学习 Spring
+# 学习 Spring
 已经学习完成的内容如下（持续更新中）
 
 ## 示例代码
-* [Hello World](https://github.com/fweisky/fengw-spring/tree/master/src/main/java/org/fengw/spring/hello)
-* [JdbcTemplate 的使用](https://github.com/fweisky/fengw-spring/tree/master/src/main/java/org/fengw/spring/jdbctemplate)
+* Hello World（org.fengw.spring.hello）
+* JdbcTemplate的使用（org.fengw.spring.jdbctemplate）
     * insert
     * update
     * query
-* [NamedParameterJdbcTemplate 的使用](https://github.com/fweisky/fengw-spring/tree/master/src/main/java/org/fengw/spring/namedparameterjdbctemplate)
+* NamedParameterJdbcTemplate的使用（org.fengw.spring.namedparameterjdbctemplate）
     * insert
     * update
     * query
-* [JTA 分布式事务管理](https://github.com/fweisky/fengw-spring/tree/master/src/main/java/org/fengw/spring/jta)
-* [@Conditional 注解条件化创建Bean](https://github.com/fweisky/fengw-spring/tree/master/src/main/java/org/fengw/spring/configuration)
-* [AOP面向切面编程](https://github.com/fweisky/fengw-spring/tree/master/src/main/java/org/fengw/spring/aop)
-    * [前置通知：@Before](https://github.com/fweisky/fengw-spring/tree/master/src/main/java/org/fengw/spring/aop/advice)
-    * [后置通知：@After](https://github.com/fweisky/fengw-spring/tree/master/src/main/java/org/fengw/spring/aop/advice)
-    * [返回通知：@AfterReturning](https://github.com/fweisky/fengw-spring/tree/master/src/main/java/org/fengw/spring/aop/advice)
-    * [异常通知：@AfterThrowing](https://github.com/fweisky/fengw-spring/tree/master/src/main/java/org/fengw/spring/aop/advice)
-    * [环绕通知：@Around](https://github.com/fweisky/fengw-spring/tree/master/src/main/java/org/fengw/spring/aop/around)
-    * [定义切点：@Pointcut](https://github.com/fweisky/fengw-spring/tree/master/src/main/java/org/fengw/spring/aop/advice)
-    * [引入新方法：@DeclareParents](https://github.com/fweisky/fengw-spring/tree/master/src/main/java/org/fengw/spring/aop/declareparents)
-* [Bean的作用域](https://github.com/fweisky/fengw-spring/tree/master/src/main/java/org/fengw/spring/scope)
-    * [单例（Singleton）](https://github.com/fweisky/fengw-spring/tree/master/src/main/java/org/fengw/spring/scope/Singleton.java)
-    * [原型（Prototype）](https://github.com/fweisky/fengw-spring/tree/master/src/main/java/org/fengw/spring/scope/Prototype.java)
+* JTA分布式事务管理（org.fengw.spring.jta）
+* @Conditional注解条件化创建Bean（org.fengw.spring.configuration）
+* AOP面向切面编程（org.fengw.spring.aop）
+    * 前置通知 @Before（org.fengw.spring.aop.advice）
+    * 后置通知 @After
+    * 返回通知 @AfterReturning
+    * 异常通知 @AfterThrowing
+    * 定义切点 @Pointcut
+    * 环绕通知 @Around（org.fengw.spring.aop.around）
+    * 引入新方法 @DeclareParents（org.fengw.spring.aop.declareparents）
+* Bean的作用域（org.fengw.spring.scope）
+    * 单例（Singleton）（org.fengw.spring.scope.Singleton）
+    * 原型（Prototype）]（org.fengw.spring.scope.Prototype）
     * 会话（Session） --> 过后再学
     * 请求（Request） --> 过后再学
+* 自定义异常的事务回滚（org.fengw.spring.customexception）
+    * 不能回滚：继承Exception并未指定@Transactional的rollbackFor属性
+    * 可以回滚：继承Exception并已指定@Transactional的rollbackFor属性
+    * 可以回滚：继承RuntimeException并未指定@Transactional的rollbackFor属性
+    * 可以回滚：继承RuntimeException并已指定@Transactional的rollbackFor属性
 
 ## 运行示例
-* [JUnit测试类直接运行即可](https://github.com/fweisky/fengw-spring/tree/master/src/test/java/org/fengw/spring/test)
+* [JUnit测试类直接运行即可]（org.fengw.spring.test）

@@ -25,7 +25,7 @@ public class NamedParameterJdbcTemplateServiceImpl implements INamedParameterJdb
     private INamedParameterJdbcTemplateDao dao;
 
     @Override
-    @Transactional(noRollbackFor=Exception.class)
+    @Transactional(rollbackFor=Exception.class)
     public int insert() {
         Test1Entity entity = new Test1Entity();
         entity.setName("fengW");
@@ -43,7 +43,7 @@ public class NamedParameterJdbcTemplateServiceImpl implements INamedParameterJdb
     }
 
     @Override
-    @Transactional(noRollbackFor=Exception.class)
+    @Transactional(rollbackFor=Exception.class)
     public int update() {
         Test1Entity entity = new Test1Entity();
         entity.setName("fengW");

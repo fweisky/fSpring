@@ -23,7 +23,7 @@ public class JdbcTemplateServiceImpl implements IJdbcTemplateService {
     private IJdbcTemplateDao dao;
 
     @Override
-    @Transactional(noRollbackFor=Exception.class)
+    @Transactional(rollbackFor=Exception.class)
     public int insert() {
         Test1Entity entity = new Test1Entity();
         entity.setName("fengW");
@@ -39,7 +39,7 @@ public class JdbcTemplateServiceImpl implements IJdbcTemplateService {
     }
 
     @Override
-    @Transactional(noRollbackFor=Exception.class)
+    @Transactional(rollbackFor=Exception.class)
     public int update() {
         Test1Entity entity = new Test1Entity();
         entity.setName("fengW");

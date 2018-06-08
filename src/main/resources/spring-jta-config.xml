@@ -62,13 +62,13 @@
         <property name="transactionTimeout" value="300" />
     </bean>
 
-    <!-- Spring事务管理器 -->
+    <!-- 事务管理器 -->
     <bean id="springTransactionManager" class="org.springframework.transaction.jta.JtaTransactionManager">
         <property name="transactionManager" ref="atomikosTransactionManager" />
         <property name="userTransaction" ref="atomikosUserTransaction" />
     </bean>
 
-    <!-- spring事务模板 -->
+    <!-- 事务模板 -->
     <bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
         <property name="transactionManager" ref="springTransactionManager" />
     </bean>
@@ -82,6 +82,8 @@
     </bean>
 
     <context:annotation-config />
+
+    <!-- 开启事务注解 -->
     <tx:annotation-driven transaction-manager="springTransactionManager" />
 
 </beans>

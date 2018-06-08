@@ -20,23 +20,23 @@ import org.springframework.stereotype.Repository;
 public class NamedParameterJdbcTemplateDaoImpl implements INamedParameterJdbcTemplateDao {
 
     @Autowired
-    private NamedParameterJdbcTemplate dao;
+    private NamedParameterJdbcTemplate jdbc;
 
     @Override
     public int insert(Test1Entity entity) {
         String sql = "insert into t_test_1 (name, birthday, sex, money) values (:name, :birthday, :sex, :money)";
-        return dao.update(sql, new BeanPropertySqlParameterSource(entity));
+        return jdbc.update(sql, new BeanPropertySqlParameterSource(entity));
     }
 
     @Override
     public List<Test1Entity> query(Map<String, String> paramMap) {
         String sql = "select name, birthday, sex, money from t_test_1 where name=:name";
-        return dao.query(sql, paramMap, new BeanPropertyRowMapper<Test1Entity>(Test1Entity.class));
+        return jdbc.query(sql, paramMap, new BeanPropertyRowMapper<Test1Entity>(Test1Entity.class));
     }
 
     @Override
     public int update(Test1Entity entity) {
         String sql = "update t_test_1 set birthday=:birthday, sex=:sex, money=:money where name=:name";
-        return dao.update(sql, new BeanPropertySqlParameterSource(entity));
+        return jdbc.update(sql, new BeanPropertySqlParameterSource(entity));
     }
 }

@@ -18,29 +18,30 @@ USE `fspring_goods`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `t_test_1`
+-- Table structure for table `t_goods`
 --
 
-DROP TABLE IF EXISTS `t_test_1`;
+DROP TABLE IF EXISTS `t_goods`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `t_test_1` (
+CREATE TABLE `t_goods` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(10) DEFAULT NULL COMMENT '姓名',
-  `birthday` date DEFAULT NULL COMMENT '生日',
-  `sex` int(11) DEFAULT NULL COMMENT '性别',
-  `money` decimal(9,2) DEFAULT NULL COMMENT '工资',
+  `name` varchar(10) DEFAULT NULL COMMENT '名称',
+  `buy_date` date DEFAULT NULL COMMENT '购买日期',
+  `count` int(11) DEFAULT NULL COMMENT '数量',
+  `price` decimal(9,2) DEFAULT NULL COMMENT '价格',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `t_test_1`
+-- Dumping data for table `t_goods`
 --
 
-LOCK TABLES `t_test_1` WRITE;
-/*!40000 ALTER TABLE `t_test_1` DISABLE KEYS */;
-/*!40000 ALTER TABLE `t_test_1` ENABLE KEYS */;
+LOCK TABLES `t_goods` WRITE;
+/*!40000 ALTER TABLE `t_goods` DISABLE KEYS */;
+INSERT INTO `t_goods` VALUES (1,'11','2018-06-09',1,11111.11);
+/*!40000 ALTER TABLE `t_goods` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -52,7 +53,7 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-28 23:46:14
+-- Dump completed on 2018-06-09 20:50:09
 CREATE DATABASE  IF NOT EXISTS `fspring_user` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `fspring_user`;
 -- MySQL dump 10.13  Distrib 5.7.12, for Win64 (x86_64)
@@ -73,29 +74,29 @@ USE `fspring_user`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `t_test_1`
+-- Table structure for table `t_user`
 --
 
-DROP TABLE IF EXISTS `t_test_1`;
+DROP TABLE IF EXISTS `t_user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `t_test_1` (
+CREATE TABLE `t_user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(10) DEFAULT NULL COMMENT '姓名',
   `birthday` date DEFAULT NULL COMMENT '生日',
   `sex` int(11) DEFAULT NULL COMMENT '性别',
   `money` decimal(9,2) DEFAULT NULL COMMENT '工资',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `t_test_1`
+-- Dumping data for table `t_user`
 --
 
-LOCK TABLES `t_test_1` WRITE;
-/*!40000 ALTER TABLE `t_test_1` DISABLE KEYS */;
-/*!40000 ALTER TABLE `t_test_1` ENABLE KEYS */;
+LOCK TABLES `t_user` WRITE;
+/*!40000 ALTER TABLE `t_user` DISABLE KEYS */;
+/*!40000 ALTER TABLE `t_user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -107,4 +108,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-28 23:46:15
+-- Dump completed on 2018-06-09 20:50:10

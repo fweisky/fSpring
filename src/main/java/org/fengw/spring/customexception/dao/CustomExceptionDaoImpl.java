@@ -1,6 +1,6 @@
 package org.fengw.spring.customexception.dao;
 
-import org.fengw.spring.common.entity.Test1Entity;
+import org.fengw.spring.common.entity.UserEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
@@ -18,8 +18,8 @@ public class CustomExceptionDaoImpl implements ICustomExceptionDao {
     private NamedParameterJdbcTemplate jdbc;
 
     @Override
-    public int insert(Test1Entity entity) {
-        String sql = "insert into t_test_1 (name, birthday, sex, money) values (:name, :birthday, :sex, :money)";
+    public int insert(UserEntity entity) {
+        String sql = "insert into t_user (name, birthday, sex, money) values (:name, :birthday, :sex, :money)";
         return jdbc.update(sql, new BeanPropertySqlParameterSource(entity));
     }
 }

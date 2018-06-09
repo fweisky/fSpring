@@ -58,6 +58,7 @@ public class ScopeTest {
     /**
      * 测试Bean的作用域： 原型（Prototype）
      */
+    @Test
     public void testPrototype() {
 
         // 实例1：赋值

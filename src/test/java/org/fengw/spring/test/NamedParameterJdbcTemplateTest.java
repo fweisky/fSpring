@@ -3,7 +3,7 @@ package org.fengw.spring.test;
 import java.util.List;
 
 import org.fengw.spring.common.constant.ConfigFileConstant;
-import org.fengw.spring.common.entity.Test1Entity;
+import org.fengw.spring.common.entity.UserEntity;
 import org.fengw.spring.namedparameterjdbctemplate.service.INamedParameterJdbcTemplateService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -36,9 +36,9 @@ public class NamedParameterJdbcTemplateTest {
      */
     @Test
     public void testQuery() {
-        List<Test1Entity> entityList = service.query();
+        List<UserEntity> entityList = service.query();
 
-        for (Test1Entity entity : entityList) {
+        for (UserEntity entity : entityList) {
             System.out.println(String.format("%s  %s  %s  %s",
                     entity.getName(), entity.getBirthday(), entity.getSex(), entity.getMoney()));
         }

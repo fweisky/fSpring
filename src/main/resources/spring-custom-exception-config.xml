@@ -18,21 +18,21 @@
     <context:property-placeholder location="db.properties" />
 
     <!-- JDBC数据源：商品 -->
-    <bean id="dataSourceGoods" class="org.apache.commons.dbcp2.BasicDataSource">
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
         <property name="driverClassName" value="${db.goods.driverClassName}" />
-        <property name="url" value="${db.goods.url}" />
-        <property name="username" value="${db.goods.username}" />
-        <property name="password" value="${db.goods.password}" />
+        <property name="url" value="${db.user.url}" />
+        <property name="username" value="${db.user.username}" />
+        <property name="password" value="${db.user.password}" />
     </bean>
 
     <!-- NamedParameterJdbcTemplate -->
     <bean id="namedParameterJdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
-        <constructor-arg ref="dataSourceGoods" />
+        <constructor-arg ref="dataSource" />
     </bean>
 
     <!-- 事务管理 -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSourceGoods" />
+        <property name="dataSource" ref="dataSource" />
     </bean>
 
     <!-- 开启事务注解 -->

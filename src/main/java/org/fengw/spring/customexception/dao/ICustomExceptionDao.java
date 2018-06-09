@@ -1,6 +1,6 @@
 package org.fengw.spring.customexception.dao;
 
-import org.fengw.spring.common.entity.Test1Entity;
+import org.fengw.spring.common.entity.UserEntity;
 
 /**
  * 自定义异常的事务回滚
@@ -14,5 +14,5 @@ public interface ICustomExceptionDao {
      * @param entity 实体类
      * @return 插入件数
      */
-    int insert(Test1Entity entity);
+    int insert(UserEntity entity);
 }

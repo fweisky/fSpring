@@ -2,7 +2,7 @@ package org.fengw.spring.jdbctemplate.service;
 
 import java.util.List;
 
-import org.fengw.spring.common.entity.Test1Entity;
+import org.fengw.spring.common.entity.UserEntity;
 
 /**
  * JdbcTemplate
@@ -21,7 +21,7 @@ public interface IJdbcTemplateService {
      * 检索数据
      * @return 数据
      */
-    List<Test1Entity> query();
+    List<UserEntity> query();
 
     /**
      * 更新数据

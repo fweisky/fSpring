@@ -3,7 +3,7 @@ package org.fengw.spring.customexception.service;
 import java.math.BigDecimal;
 import java.util.Date;
 
-import org.fengw.spring.common.entity.Test1Entity;
+import org.fengw.spring.common.entity.UserEntity;
 import org.fengw.spring.customexception.dao.ICustomExceptionDao;
 import org.fengw.spring.customexception.exception.CustomException;
 import org.fengw.spring.customexception.exception.CustomRuntimeException;
@@ -66,7 +66,7 @@ public class CustomExceptionServiceImpl implements ICustomExceptionService {
      * 插入数据
      */
     private void insert() {
-        Test1Entity entity = new Test1Entity();
+        UserEntity entity = new UserEntity();
         entity.setName("fengW");
         entity.setBirthday(new Date());
         entity.setSex(7);

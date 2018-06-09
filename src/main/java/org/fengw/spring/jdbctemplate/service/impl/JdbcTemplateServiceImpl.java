@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
-import org.fengw.spring.common.entity.Test1Entity;
+import org.fengw.spring.common.entity.UserEntity;
 import org.fengw.spring.jdbctemplate.dao.IJdbcTemplateDao;
 import org.fengw.spring.jdbctemplate.service.IJdbcTemplateService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +25,7 @@ public class JdbcTemplateServiceImpl implements IJdbcTemplateService {
     @Override
     @Transactional(rollbackFor=Exception.class)
     public int insert() {
-        Test1Entity entity = new Test1Entity();
+        UserEntity entity = new UserEntity();
         entity.setName("fengW");
         entity.setBirthday(new Date());
         entity.setSex(0);
@@ -34,14 +34,14 @@ public class JdbcTemplateServiceImpl implements IJdbcTemplateService {
     }
 
     @Override
-    public List<Test1Entity> query() {
+    public List<UserEntity> query() {
         return dao.query();
     }
 
     @Override
     @Transactional(rollbackFor=Exception.class)
     public int update() {
-        Test1Entity entity = new Test1Entity();
+        UserEntity entity = new UserEntity();
         entity.setName("fengW");
         entity.setBirthday(new Date());
         entity.setSex(1);

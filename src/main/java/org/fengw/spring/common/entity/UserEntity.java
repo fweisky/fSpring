@@ -4,11 +4,11 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * t_test_1 表的Entity
+ * 用户表
  *
  * @author Feng Wei
  */
-public class Test1Entity {
+public class UserEntity {
 
     /** 姓名 */
     private String name;

@@ -3,7 +3,8 @@ package org.fengw.spring.jta.service.impl;
 import java.math.BigDecimal;
 import java.util.Date;
 
-import org.fengw.spring.common.entity.Test1Entity;
+import org.fengw.spring.common.entity.GoodsEntity;
+import org.fengw.spring.common.entity.UserEntity;
 import org.fengw.spring.jta.dao.IJtaDao;
 import org.fengw.spring.jta.service.IJtaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,15 +27,15 @@ public class JtaServiceImpl implements IJtaService {
     public void insert() {
 
         // 插入商品库
-        Test1Entity goodsEntity = new Test1Entity();
+        GoodsEntity goodsEntity = new GoodsEntity();
         goodsEntity.setName("goods");
-        goodsEntity.setBirthday(new Date());
-        goodsEntity.setSex(0);
-        goodsEntity.setMoney(new BigDecimal("77777.77"));
+        goodsEntity.setBuyDate(new Date());
+        goodsEntity.setCount(0);
+        goodsEntity.setPrice(new BigDecimal("77777.77"));
         dao.insertGoods(goodsEntity);
 
         // 插入用户库
-        Test1Entity userEntity = new Test1Entity();
+        UserEntity userEntity = new UserEntity();
         userEntity.setName("user");
         userEntity.setBirthday(new Date());
         userEntity.setSex(1);

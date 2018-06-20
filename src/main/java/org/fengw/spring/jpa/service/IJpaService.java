@@ -17,7 +17,12 @@ public interface IJpaService {
     void batchInsert();
 
     /**
+     * <pre>
      * 实体类方式：删除
+     * 会访问2次DB
+     * 1.根据主键检索，得到实体类
+     * 2.删除处理
+     * </pre>
      */
     void delete();
 
@@ -43,7 +48,12 @@ public interface IJpaService {
     void rollback();
 
     /**
+     * <pre>
      * 实体类方式：更新
+     * 会访问2次DB
+     * 1.根据主键检索，得到实体类
+     * 2.更新处理
+     * </pre>
      */
     void update();
 

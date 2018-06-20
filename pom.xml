@@ -40,9 +40,27 @@
         <!-- AspectJ(AOP) -->
         <aspectj.version>1.9.0</aspectj.version>
 
+        <!-- Spring Data JPA -->
+        <spring-data-jpa.version>2.0.8.RELEASE</spring-data-jpa.version>
+
+        <!-- Hibernate -->
+        <hibernate.version>5.3.1.Final</hibernate.version>
+
     </properties>
 
     <dependencies>
+
+        <!-- Hibernate -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
 
         <!-- AspectJ(AOP) -->
         <dependency>
@@ -104,6 +122,13 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
             <version>${spring.version}</version>
+        </dependency>
+
+        <!-- Spring Data JPA -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>${spring-data-jpa.version}</version>
         </dependency>
 
         <!-- MySQL -->

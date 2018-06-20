@@ -22,6 +22,9 @@ public abstract class ConfigFileConstant {
     /** spring-jdbc-template-config */
     public static final String PATH_SPRING_JDBC_TEMPLATE_CONFIG = "classpath:spring-jdbc-template-config.xml";
 
+    /** spring-jpa-config.xml */
+    public static final String PATH_SPRING_JPA_CONFIG = "classpath:spring-jpa-config.xml";
+
     /** spring-jta-config */
     public static final String PATH_SPRING_JTA_CONFIG = "classpath:spring-jta-config.xml";
 

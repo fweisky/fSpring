@@ -17,9 +17,9 @@
     <!-- 导入资源文件 -->
     <context:property-placeholder location="db.properties" />
 
-    <!-- JDBC数据源：商品 -->
+    <!-- JDBC数据源：用户库 -->
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
-        <property name="driverClassName" value="${db.goods.driverClassName}" />
+        <property name="driverClassName" value="${db.user.driverClassName}" />
         <property name="url" value="${db.user.url}" />
         <property name="username" value="${db.user.username}" />
         <property name="password" value="${db.user.password}" />

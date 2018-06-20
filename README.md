@@ -31,6 +31,9 @@
     * 可以回滚：继承Exception并已指定@Transactional的rollbackFor属性
     * 可以回滚：继承RuntimeException并未指定@Transactional的rollbackFor属性
     * 可以回滚：继承RuntimeException并已指定@Transactional的rollbackFor属性
+* JPA（org.fengw.spring.jpa）
+    * 使用注解方式进行RUD操作，不支持C操作
+    * 使用实体类方式进行CUD、批量C、回滚操作
 
 ## 运行示例
 * [JUnit测试类直接运行即可]（org.fengw.spring.test）

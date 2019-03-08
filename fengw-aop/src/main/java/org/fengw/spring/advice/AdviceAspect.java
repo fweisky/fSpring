@@ -1,7 +1,5 @@
 package org.fengw.spring.advice;
 
-import java.util.Arrays;
-
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -10,6 +8,8 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
+
+import java.util.Arrays;
 
 /**
  * <pre>
@@ -72,6 +72,6 @@ public class AdviceAspect {
      * 定义单一切点<br/>
      * 前置通知、后置通知、返回通知、异常通知都可以应用此规则
      */
-    @Pointcut(value="execution(* org.fengw.spring.advice.AdviceImpl.*(..))")
+    @Pointcut(value="execution(public * org.fengw.spring.advice.AdviceImpl.*(..))")
     public void singlePointcut() {}
 }

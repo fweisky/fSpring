@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fengw-aop" />
+        <module name="fengw-common" />
+        <module name="fengw-configuration" />
+        <module name="fengw-custom-exception" />
+        <module name="fengw-hello" />
+        <module name="fengw-jdbc-template" />
+        <module name="fengw-jpa" />
+        <module name="fengw-jta" />
+        <module name="fengw-named-parameter-jdbc-template" />
+        <module name="fengw-scope" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

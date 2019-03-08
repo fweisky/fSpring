@@ -16,6 +16,6 @@ public class DeclareParentsAspect {
     /**
      * 引入新方法：辽宁
      */
-    @DeclareParents(value="org.fengw.spring.aop.declareparents.China+", defaultImpl=LiaoNingImpl.class)
+    @DeclareParents(value="org.fengw.spring.declareparents.China+", defaultImpl=LiaoNingImpl.class)
     public ILiaoNing liaoNing;
 }

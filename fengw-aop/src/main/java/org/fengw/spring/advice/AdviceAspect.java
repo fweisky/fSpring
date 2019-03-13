@@ -52,7 +52,7 @@ public class AdviceAspect {
      * @param jp 连接点
      * @param e 异常
      */
-    @AfterThrowing(value="singlePointcut()", throwing="e")
+    @AfterThrowing(value="errorPointcut()", throwing="e")
     public void afterThorwingMethod(JoinPoint jp, Exception e){
         String methodName = jp.getSignature().getName();
         System.out.println(String.format("异常通知  |  方法名=%s  |  异常=%s", methodName, e));
@@ -74,4 +74,11 @@ public class AdviceAspect {
      */
     @Pointcut(value="execution(public * org.fengw.spring.advice.AdviceImpl.*(..))")
     public void singlePointcut() {}
+
+    /**
+     * 定义单一切点<br/>
+     * 前置通知、后置通知、返回通知、异常通知都可以应用此规则
+     */
+    @Pointcut(value="execution(public * *(..))")
+    public void errorPointcut() {}
 }

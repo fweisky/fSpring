@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee6bfa2d-9bf0-4d74-ac3e-d1333c9f2e2d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fengw-aop/src/main/java/org/fengw/spring/advice/AdviceAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/fengw-aop/src/main/java/org/fengw/spring/advice/AdviceAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fengw-aop/src/main/java/org/fengw/spring/declareparents/DeclareParentsAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/fengw-aop/src/main/java/org/fengw/spring/declareparents/DeclareParentsAspect.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/fengw-scope/target/" />
     <ignored path="$PROJECT_DIR$/fengw-jpa/target/" />
@@ -26,12 +26,12 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fengw-aop/src/main/java/org/fengw/spring/advice/AdviceAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1311">
-              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="568">
+              <caret line="74" column="80" lean-forward="true" selection-start-line="74" selection-start-column="80" selection-end-line="74" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,55 +40,16 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fengw-aop/src/main/java/org/fengw/spring/advice/AdviceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="23" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fengw-aop/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fengw-aop/src/test/java/org/fengw/spring/test/AopTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+            <state relative-caret-position="166">
+              <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
               <folding>
                 <element signature="e#852#853#0" expanded="true" />
                 <element signature="e#886#887#0" expanded="true" />
+                <element signature="e#1133#1134#0" expanded="true" />
+                <element signature="e#1168#1169#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fengw-jpa/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fengw-aop/src/main/resources/spring-config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -140,10 +101,10 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1374" />
-    <option name="y" value="101" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-8" />
+    <option name="y" value="32" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -151,7 +112,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,26 +163,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spring" type="462c0819:PsiDirectoryNode" />
               <item name="advice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fengw-spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fengw-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="fengw-aop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="around" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fengw-spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fengw-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="fengw-aop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="declareparents" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fengw-spring" type="b2602c69:ProjectViewProjectNode" />
@@ -301,12 +241,13 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551949327196" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552465180012" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -327,7 +268,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AopTest.testAroundAdd">
+  <component name="RunManager" selected="JUnit.AopTest.testAroundDivide">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -362,6 +303,23 @@
       <option name="PACKAGE_NAME" value="org.fengw.spring.test" />
       <option name="MAIN_CLASS_NAME" value="org.fengw.spring.test.AopTest" />
       <option name="METHOD_NAME" value="testAroundAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AopTest.testAroundDivide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fengw-aop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.fengw.spring.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.fengw.spring.test" />
+      <option name="MAIN_CLASS_NAME" value="org.fengw.spring.test.AopTest" />
+      <option name="METHOD_NAME" value="testAroundDivide" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -410,6 +368,7 @@
       </method>
     </configuration>
     <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -419,6 +378,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AopTest.testAroundDivide" />
         <item itemvalue="JUnit.AopTest.testAroundAdd" />
         <item itemvalue="JUnit.AopTest.testAroudDivide" />
         <item itemvalue="JUnit.AopTest.testHelloChina" />
@@ -439,25 +399,11 @@
       <workItem from="1531471289292" duration="1208000" />
       <workItem from="1531899594238" duration="2236000" />
       <workItem from="1551935667231" duration="8992000" />
+      <workItem from="1552464639727" duration="555000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HelloTest_testHello - 2018.07.13 at 16h 58m 37s.xml">
-      <configuration name="HelloTest.testHello" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HelloTest_testHello - 2018.07.18 at 15h 41m 11s.xml">
-      <configuration name="HelloTest.testHello" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AopTest_testAroudDivide - 2019.03.07 at 13h 21m 51s.xml">
-      <configuration name="AopTest.testAroudDivide" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AopTest_testHelloChina - 2019.03.07 at 13h 25m 10s.xml">
-      <configuration name="AopTest.testHelloChina" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AopTest_testHelloChina - 2019.03.07 at 13h 26m 34s.xml">
-      <configuration name="AopTest.testHelloChina" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AopTest_testAroudDivide - 2019.03.07 at 13h 44m 29s.xml">
       <configuration name="AopTest.testAroudDivide" configurationId="JUnit" />
     </history-entry>
@@ -473,25 +419,44 @@
     <history-entry file="AopTest_testAroundAdd - 2019.03.07 at 14h 46m 33s.xml">
       <configuration name="AopTest.testAroundAdd" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AopTest_testAroundDivide - 2019.03.13 at 16h 12m 28s.xml">
+      <configuration name="AopTest.testAroundDivide" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AopTest_testAroudDivide - 2019.03.13 at 16h 13m 19s.xml">
+      <configuration name="AopTest.testAroudDivide" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AopTest_testAroundAdd - 2019.03.13 at 16h 13m 37s.xml">
+      <configuration name="AopTest.testAroundAdd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AopTest_testAroundDivide - 2019.03.13 at 16h 14m 53s.xml">
+      <configuration name="AopTest.testAroundDivide" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AopTest_testAroundDivide - 2019.03.13 at 16h 15m 50s.xml">
+      <configuration name="AopTest.testAroundDivide" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12436000" />
+    <option name="totallyTimeSpent" value="12991000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1374" y="101" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3623298" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2857143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" />
+      <window_info anchor="bottom" id="Sequence" />
+      <window_info anchor="bottom" id="CheckStyle" />
+      <window_info anchor="bottom" id="Tail" />
+      <window_info anchor="bottom" id="MyBatis Sql Log" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3967213" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39587852" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -502,7 +467,8 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.34872612" />
       <window_info anchor="bottom" id="Messages" order="12" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="Key Promoter X" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -513,6 +479,7 @@
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Maven" order="10" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25549048" />
@@ -686,6 +653,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fengw-aop/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1216">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fengw-jpa/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/fengw-aop/src/main/resources/spring-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -695,36 +682,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fengw-aop/src/test/java/org/fengw/spring/test/AopTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        <state relative-caret-position="166">
+          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
           <folding>
             <element signature="e#852#853#0" expanded="true" />
             <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#1133#1134#0" expanded="true" />
+            <element signature="e#1168#1169#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fengw-aop/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fengw-jpa/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fengw-aop/src/main/java/org/fengw/spring/advice/AdviceAspect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="568">
+          <caret line="74" column="80" lean-forward="true" selection-start-line="74" selection-start-column="80" selection-end-line="74" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
